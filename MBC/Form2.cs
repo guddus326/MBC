@@ -22,8 +22,8 @@ namespace MBC
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;             // 추가
-            Form1 showForm1 = new Form1();
-            showForm1.ShowDialog();
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
         }
     }
 }

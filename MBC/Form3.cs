@@ -21,5 +21,12 @@ namespace MBC
         {
             cmd();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;             // 추가
+            Form1 showForm1 = new Form1();
+            showForm1.ShowDialog();
+        }
     }
 }
