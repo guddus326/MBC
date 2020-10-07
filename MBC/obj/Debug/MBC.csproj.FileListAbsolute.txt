@@ -1,0 +1,12 @@
+C:\MBC\MBC\bin\Debug\MBC.exe.config
+C:\MBC\MBC\bin\Debug\MBC.exe
+C:\MBC\MBC\bin\Debug\MBC.pdb
+C:\MBC\MBC\obj\Debug\MBC.csprojAssemblyReference.cache
+C:\MBC\MBC\obj\Debug\MBC.Form1.resources
+C:\MBC\MBC\obj\Debug\MBC.Properties.Resources.resources
+C:\MBC\MBC\obj\Debug\MBC.csproj.GenerateResource.cache
+C:\MBC\MBC\obj\Debug\MBC.csproj.CoreCompileInputs.cache
+C:\MBC\MBC\obj\Debug\MBC.exe
+C:\MBC\MBC\obj\Debug\MBC.pdb
+C:\MBC\MBC\obj\Debug\MBC.Form2.resources
+C:\MBC\MBC\obj\Debug\MBC.Form3.resources
