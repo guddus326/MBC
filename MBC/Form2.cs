@@ -17,6 +17,12 @@ namespace MBC
             InitializeComponent();
             button1.Text = "START";
             label1.Text = "미백싹싹";
+
+            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\syringe.png");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\syringe.png");
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void button1_Click(object sender, EventArgs e)
