@@ -31,5 +31,12 @@ namespace MBC
             Form1 showForm1 = new Form1();
             showForm1.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form5 showForm5 = new Form5();
+            showForm5.ShowDialog();
+        }
     }
 }
