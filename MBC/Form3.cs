@@ -19,7 +19,10 @@ namespace MBC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cmd();
+            this.Visible = false;
+            Form4 showForm4 = new Form4();
+            showForm4.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)

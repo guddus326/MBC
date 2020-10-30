@@ -92,13 +92,13 @@ namespace MBC
             // 명령어를 보낼때는 꼭 마무리를 해줘야 한다. 그래서 마지막에 NewLine가 필요하다
             process.StandardInput.Close();
 
-            string result = process.StandardOutput.ReadToEnd();
+            /*string result = process.StandardOutput.ReadToEnd();
             StringBuilder sb = new StringBuilder();
             sb.Append("[Result Info]" + DateTime.Now + "\r\n");
             sb.Append(result);
             sb.Append("\r\n");
 
-            //textBox1.Text = sb.ToString();
+            textBox1.Text = sb.ToString();*/
             process.WaitForExit();
             process.Close();
         }
