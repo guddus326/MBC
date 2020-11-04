@@ -34,19 +34,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(298, 59);
+            this.button1.Location = new System.Drawing.Point(273, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(258, 76);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "USB  연결 확인";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(289, 205);
+            this.textBox1.Location = new System.Drawing.Point(273, 233);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 28);
+            this.textBox1.Size = new System.Drawing.Size(258, 28);
             this.textBox1.TabIndex = 1;
             // 
             // Form4

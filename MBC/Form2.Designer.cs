@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("휴먼편지체", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(261, 160);
+            this.label1.Location = new System.Drawing.Point(290, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 117);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.Font = new System.Drawing.Font("굴림", 15F);
-            this.button1.Location = new System.Drawing.Point(310, 396);
+            this.button1.Location = new System.Drawing.Point(335, 392);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(304, 78);
             this.button1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(89, 205);
+            this.pictureBox1.Location = new System.Drawing.Point(129, 141);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 124);
             this.pictureBox1.TabIndex = 2;
@@ -69,9 +69,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(732, 186);
+            this.pictureBox2.Location = new System.Drawing.Point(726, 148);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(126, 116);
+            this.pictureBox2.Size = new System.Drawing.Size(128, 124);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 

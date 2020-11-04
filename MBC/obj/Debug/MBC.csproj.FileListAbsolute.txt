@@ -24,3 +24,4 @@ C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.exe
 C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.pdb
 C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form4.resources
 C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form5.resources
+C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form6.resources

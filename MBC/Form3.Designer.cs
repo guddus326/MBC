@@ -43,31 +43,31 @@ namespace MBC
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(235, 109);
+            this.button1.Location = new System.Drawing.Point(266, 180);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(259, 93);
+            this.button1.Size = new System.Drawing.Size(275, 93);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "usb 연결 확인";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(285, 264);
+            this.button2.Location = new System.Drawing.Point(266, 297);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(275, 84);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "인터넷 연결 확인";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(66, 60);
+            this.button3.Location = new System.Drawing.Point(266, 60);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(275, 93);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "현재시각";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
