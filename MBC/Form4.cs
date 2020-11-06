@@ -13,13 +13,14 @@ namespace MBC
 {
     public partial class Form4 : Form
     {
-        string status = "";
+        
 
         public Form4()
         {
             InitializeComponent();
             pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
         }
+        string status = "";
         protected override void WndProc(ref Message m)
         {
             // StringBuilder sb = new StringBuilder();

@@ -14,7 +14,11 @@ namespace MBC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Form2());
+=======
+            Application.Run(new Form7());
+>>>>>>> cf383cd0a1d47b67a9e3f63ab1d7f882f3e5947e
         }
     }
 }
