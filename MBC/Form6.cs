@@ -31,7 +31,7 @@ namespace MBC
             {
                 if (dname.DriveType == DriveType.Fixed)
                    {
-                    if (dname.Name == @"C:\")
+                    if (dname.Name == @"C:\Users\s2019\Downloads\")
                     {
                         TreeNode rootNode = new TreeNode(dname.Name);
                         rootNode.ImageIndex = 0;

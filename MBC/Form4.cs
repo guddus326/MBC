@@ -18,6 +18,7 @@ namespace MBC
         public Form4()
         {
             InitializeComponent();
+            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
         }
         protected override void WndProc(ref Message m)
         {
@@ -39,7 +40,8 @@ namespace MBC
             base.WndProc(ref m);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             textBox1.Text = status;
         }

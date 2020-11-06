@@ -15,24 +15,26 @@ namespace MBC
         public Form3()
         {
             InitializeComponent();
+            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
+            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\internet.png");
+            pictureBox3.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\time.png");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             Form4 showForm4 = new Form4();
             showForm4.ShowDialog();
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Visible = false;             // 추가
             Form1 showForm1 = new Form1();
             showForm1.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             Form5 showForm5 = new Form5();
