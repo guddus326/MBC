@@ -1,0 +1,54 @@
+[33mcommit 525cbd0b0991caab3a816cc25120699d68a90286[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Fri Nov 6 11:35:32 2020 +0900
+
+    버튼 이미지로 변경
+
+[33mcommit 734d8d9dd5ad0180a2647cec4af4cf7a19b27923[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Wed Nov 4 15:42:13 2020 +0900
+
+    디렉토리 보이게 하기
+
+[33mcommit def506f9b1dfca4c1abdc02d7b674820915603b0[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Fri Oct 30 19:13:55 2020 +0900
+
+    이미지 추가
+
+[33mcommit 605ae393365da4c1bb46f6d03004b751064c626c[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Fri Oct 30 18:09:37 2020 +0900
+
+    현재 시각 표시
+
+[33mcommit a864c21ef5f3cd3a1a451a93fbf06885b4609133[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Fri Oct 30 17:57:41 2020 +0900
+
+    usb 연결 기능
+
+[33mcommit 4923883361c7f7466d41d13c1b4c4ac601a613de[m
+Merge: 4ba9bd8 0272fc8
+Author: guddus326 <guddus326@naver.com>
+Date:   Wed Oct 7 19:36:57 2020 +0900
+
+    Merge branch 'master' of https://github.com/guddus326/MBC
+
+[33mcommit 4ba9bd802ceddfd941808ca5a0cd14e170d743a6[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Wed Oct 7 19:36:29 2020 +0900
+
+    프로세스 정리
+
+[33mcommit 0272fc842eb148b218ad43240742137803fdac7f[m
+Author: HyeongYeon Ham <46678986+guddus326@users.noreply.github.com>
+Date:   Wed Oct 7 19:09:51 2020 +0900
+
+    Create README.md
+
+[33mcommit 435ec62ae7bb352d64bf48600bc3cf6c1bf46396[m
+Author: guddus326 <guddus326@naver.com>
+Date:   Wed Oct 7 19:08:37 2020 +0900
+
+    인터넷 연결 제어 성공

@@ -15,23 +15,18 @@ namespace MBC
         public Form2()
         {
             InitializeComponent();
-            button1.Text = "START";
-            label1.Text = "미백싹싹";
 
-            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\syringe.png");
+            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\버튼1.png");
+            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\로고.png");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\syringe.png");
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Visible = false;             // 추가
             Form3 showForm3 = new Form3();
             showForm3.ShowDialog();
         }
-
-     
     }
 }
