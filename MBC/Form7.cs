@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,8 +23,9 @@ namespace MBC
         int min;
         int sec;
         int time = 0;
+        int schedule = 0;
 
-        string status = "";
+        int status = 0;
         protected override void WndProc(ref Message m)
         {
             // StringBuilder sb = new StringBuilder();
@@ -33,11 +35,11 @@ namespace MBC
                 //sb.AppendFormat("Form1: " + DateTime.Now + ": " + m.Msg + ", " + m.WParam.ToInt64() + ", " + m.LParam.ToInt64());
                 if (m.WParam.ToInt64() == 32768)
                 {
-                    status = "연결";
+                    status = 1;
                 }
                 else if (m.WParam.ToInt64() == 32772)
                 {
-                    status = "해제";
+                    status = 0;
                 }
             }
 
@@ -63,6 +65,48 @@ namespace MBC
                     button1.Visible = true;
                     time = 0;
                     MessageBox.Show("알람이 울립니다.");
+                }
+            }
+            String s = DateTime.Now.ToString("HHmmss");
+            int day = WhatDay;
+            if (status==1) { 
+                switch (s)
+                {
+                    case "094920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("1교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "103920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("2교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "112920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("3교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "121920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("4교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "140920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("5교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "145920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("6교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "154920":
+                        Thread.Sleep(10000);
+                        MessageBox.Show("7교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
                 }
             }
         }
@@ -105,10 +149,7 @@ namespace MBC
             }
         }
 
-        private void ReportStatus(string message)
-        {
-            throw new NotImplementedException();
-        }
+        private void ReportStatus(string message) => throw new NotImplementedException();
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -175,7 +216,24 @@ namespace MBC
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            textBox1.Text = status;
+            textBox1.Text = "status";
         }
+
+        private int WhatDay
+        {
+            get
+            {
+                DayOfWeek day = DateTime.Now.DayOfWeek;
+
+                int iReturn = 0;
+
+                if (day == DayOfWeek.Saturday || day == DayOfWeek.Sunday)
+                    iReturn = -1;
+                else
+                    iReturn = 1;
+                return iReturn;
+            }
+        }
+
     }
 }
