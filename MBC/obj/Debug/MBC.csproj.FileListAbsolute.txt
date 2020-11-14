@@ -31,3 +31,9 @@ C:\MBC\MBC\obj\Debug\MBC.Form6.resources
 C:\MBC\MBC\obj\Debug\MBC.Form7.resources
 C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form7.resources
 C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form9.resources
+C:\MBC\MBC\obj\Debug\MBC.Form9.resources
+C:\MBC\MBC\obj\Debug\Interop.WMPLib.dll
+C:\MBC\MBC\obj\Debug\AxInterop.WMPLib.dll
+C:\MBC\MBC\obj\Debug\MBC.csproj.ResolveComReference.cache
+C:\MBC\MBC\bin\Debug\Interop.WMPLib.dll
+C:\MBC\MBC\bin\Debug\AxInterop.WMPLib.dll
