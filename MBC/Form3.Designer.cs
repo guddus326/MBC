@@ -46,7 +46,7 @@ namespace MBC
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(225, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(396, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(360, 114);
             this.pictureBox1.TabIndex = 3;
@@ -55,7 +55,7 @@ namespace MBC
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(225, 313);
+            this.pictureBox2.Location = new System.Drawing.Point(762, 28);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(360, 114);
             this.pictureBox2.TabIndex = 4;
@@ -64,7 +64,7 @@ namespace MBC
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(225, 181);
+            this.pictureBox3.Location = new System.Drawing.Point(30, 28);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(360, 114);
             this.pictureBox3.TabIndex = 5;
@@ -75,7 +75,7 @@ namespace MBC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1151, 753);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

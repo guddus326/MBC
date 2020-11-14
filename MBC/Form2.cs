@@ -15,16 +15,13 @@ namespace MBC
         public Form2()
         {
             InitializeComponent();
-
-            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\버튼1.png");
             pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\로고.png");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;             // 추가
+            this.Visible = false;
             Form3 showForm3 = new Form3();
             showForm3.ShowDialog();
         }

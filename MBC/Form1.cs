@@ -62,8 +62,6 @@ namespace MBC
             base.OnClosed(e); 
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (!bCheck)
@@ -104,6 +102,20 @@ namespace MBC
                 }
                 System.Threading.Thread.Sleep(1000);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            internet i = new internet();
+            i.ConnectInternet();
+            label1.Text = i.result;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            internet i = new internet();
+            i.DisconnectInternet();
+            label1.Text = i.result;
         }
     }
 }

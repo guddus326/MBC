@@ -37,8 +37,10 @@ namespace MBC
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form5 showForm5 = new Form5();
+            Form7 showForm5 = new Form7();
             showForm5.ShowDialog();
         }
+
+  
     }
 }

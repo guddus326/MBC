@@ -29,3 +29,5 @@ C:\MBC\MBC\obj\Debug\MBC.Form4.resources
 C:\MBC\MBC\obj\Debug\MBC.Form5.resources
 C:\MBC\MBC\obj\Debug\MBC.Form6.resources
 C:\MBC\MBC\obj\Debug\MBC.Form7.resources
+C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form7.resources
+C:\Users\s2019\Desktop\workspace\MBC\MBC\obj\Debug\MBC.Form9.resources
