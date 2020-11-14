@@ -7,13 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Collections;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace MBC
 {
     public partial class Form1 : Form
     {
+        private Timer Timer1 = null;
+        private int time = 0;
+        Boolean setting = false;
+        int hour;
+        int min;
+        int sec;
+        
+        int timercount = 0;
+
         [DllImport("wininet.dll", SetLastError = true)] 
         private extern static bool InternetGetConnectedState(out int lpdwFlags, int dwReserved);
         [Flags] 
@@ -28,6 +38,7 @@ namespace MBC
         }
         System.Threading.Thread thMain; 
         bool bCheck = false;
+        
         public Form1()
         {
             InitializeComponent();
@@ -94,11 +105,11 @@ namespace MBC
             {
                 if (Get_InternetConnectedState())
                 {
-                    label1.Text = "인터넷 연결이 되어 있습니다.";
+                    label1.Text = "인터넷이 연결되었습니다.";
                 }
                 else
                 {
-                    label1.Text = "인터넷 연결이 끊어 졌습니다.";
+                    label1.Text = "인터넷이 차단되었습니다.";
                 }
                 System.Threading.Thread.Sleep(1000);
             }
@@ -117,5 +128,36 @@ namespace MBC
             i.DisconnectInternet();
             label1.Text = i.result;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Timer1 = new Timer();
+            Timer1.Tick += timer1_Tick;
+            Timer1.Interval = (int)numericUpDown3.Value*250 ;       
+            Timer1.Start();
+            button3.Visible = false;
+
+            label2.Text = DateTime.Now.ToLongTimeString();
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time++;
+            Debug.WriteLine(time);
+
+            label2.Text = DateTime.Now.ToLongTimeString();
+
+
+            if (time > 3)
+            {
+                time = 0;
+                Timer1.Enabled = false;
+                button3.Visible = true;
+                
+            }
+        }
+
+       
     }
 }

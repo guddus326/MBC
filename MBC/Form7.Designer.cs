@@ -72,9 +72,11 @@
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Location = new System.Drawing.Point(23, 21);
+            this.groupBox1.Location = new System.Drawing.Point(29, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(459, 176);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(574, 211);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "시간 설정";
@@ -82,24 +84,27 @@
             // 초
             // 
             this.초.AutoSize = true;
-            this.초.Location = new System.Drawing.Point(335, 41);
+            this.초.Location = new System.Drawing.Point(419, 49);
+            this.초.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.초.Name = "초";
-            this.초.Size = new System.Drawing.Size(22, 15);
+            this.초.Size = new System.Drawing.Size(26, 18);
             this.초.TabIndex = 8;
             this.초.Text = "시";
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(249, 35);
+            this.numericUpDown3.Location = new System.Drawing.Point(311, 42);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(80, 25);
+            this.numericUpDown3.Size = new System.Drawing.Size(100, 28);
             this.numericUpDown3.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(322, 134);
+            this.button1.Location = new System.Drawing.Point(402, 161);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(94, 28);
             this.button1.TabIndex = 6;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -107,27 +112,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 41);
+            this.label3.Location = new System.Drawing.Point(276, 49);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 15);
+            this.label3.Size = new System.Drawing.Size(26, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "분";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(107, 41);
+            this.label2.Location = new System.Drawing.Point(134, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 15);
+            this.label2.Size = new System.Drawing.Size(26, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "시";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(143, 138);
+            this.radioButton2.Location = new System.Drawing.Point(179, 166);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(111, 19);
+            this.radioButton2.Size = new System.Drawing.Size(135, 22);
             this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
@@ -137,9 +145,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(11, 138);
+            this.radioButton1.Location = new System.Drawing.Point(14, 166);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(111, 19);
+            this.radioButton1.Size = new System.Drawing.Size(135, 22);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
@@ -148,17 +157,20 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(135, 35);
+            this.numericUpDown2.Location = new System.Drawing.Point(169, 42);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(80, 25);
+            this.numericUpDown2.Size = new System.Drawing.Size(100, 28);
             this.numericUpDown2.TabIndex = 1;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(21, 35);
+            this.numericUpDown1.Location = new System.Drawing.Point(26, 42);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(80, 25);
+            this.numericUpDown1.Size = new System.Drawing.Size(100, 28);
             this.numericUpDown1.TabIndex = 0;
+           
             // 
             // groupBox2
             // 
@@ -168,18 +180,21 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.Btn_music_load);
             this.groupBox2.Controls.Add(this.text_soundname);
-            this.groupBox2.Location = new System.Drawing.Point(23, 226);
+            this.groupBox2.Location = new System.Drawing.Point(29, 271);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(459, 190);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(574, 228);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "음악 설정";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(311, 81);
+            this.button4.Location = new System.Drawing.Point(389, 97);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 37);
+            this.button4.Size = new System.Drawing.Size(85, 44);
             this.button4.TabIndex = 5;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -187,16 +202,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 77);
+            this.textBox1.Location = new System.Drawing.Point(184, 92);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 25);
+            this.textBox1.Size = new System.Drawing.Size(165, 28);
             this.textBox1.TabIndex = 4;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(322, 145);
+            this.button3.Location = new System.Drawing.Point(402, 174);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 39);
+            this.button3.Size = new System.Drawing.Size(126, 47);
             this.button3.TabIndex = 3;
             this.button3.Text = "재생 중지";
             this.button3.UseVisualStyleBackColor = true;
@@ -204,9 +221,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(180, 145);
+            this.button2.Location = new System.Drawing.Point(225, 174);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 39);
+            this.button2.Size = new System.Drawing.Size(126, 47);
             this.button2.TabIndex = 2;
             this.button2.Text = "재생";
             this.button2.UseVisualStyleBackColor = true;
@@ -214,9 +232,10 @@
             // 
             // Btn_music_load
             // 
-            this.Btn_music_load.Location = new System.Drawing.Point(30, 145);
+            this.Btn_music_load.Location = new System.Drawing.Point(38, 174);
+            this.Btn_music_load.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_music_load.Name = "Btn_music_load";
-            this.Btn_music_load.Size = new System.Drawing.Size(101, 39);
+            this.Btn_music_load.Size = new System.Drawing.Size(126, 47);
             this.Btn_music_load.TabIndex = 1;
             this.Btn_music_load.Text = "불러오기";
             this.Btn_music_load.UseVisualStyleBackColor = true;
@@ -224,17 +243,20 @@
             // 
             // text_soundname
             // 
-            this.text_soundname.Location = new System.Drawing.Point(17, 27);
+            this.text_soundname.Location = new System.Drawing.Point(21, 32);
+            this.text_soundname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.text_soundname.Name = "text_soundname";
-            this.text_soundname.Size = new System.Drawing.Size(427, 25);
+            this.text_soundname.Size = new System.Drawing.Size(533, 28);
             this.text_soundname.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbl_realtime);
-            this.groupBox3.Location = new System.Drawing.Point(508, 21);
+            this.groupBox3.Location = new System.Drawing.Point(635, 25);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(252, 176);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(315, 211);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "현재 시간";
@@ -242,18 +264,21 @@
             // lbl_realtime
             // 
             this.lbl_realtime.AutoSize = true;
-            this.lbl_realtime.Location = new System.Drawing.Point(16, 30);
+            this.lbl_realtime.Location = new System.Drawing.Point(20, 36);
+            this.lbl_realtime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_realtime.Name = "lbl_realtime";
-            this.lbl_realtime.Size = new System.Drawing.Size(37, 15);
+            this.lbl_realtime.Size = new System.Drawing.Size(44, 18);
             this.lbl_realtime.TabIndex = 0;
             this.lbl_realtime.Text = "시간";
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lbl_status);
-            this.groupBox4.Location = new System.Drawing.Point(508, 226);
+            this.groupBox4.Location = new System.Drawing.Point(635, 271);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(252, 190);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(315, 228);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "다음 알람까지";
@@ -261,9 +286,10 @@
             // lbl_status
             // 
             this.lbl_status.AutoSize = true;
-            this.lbl_status.Location = new System.Drawing.Point(32, 79);
+            this.lbl_status.Location = new System.Drawing.Point(40, 95);
+            this.lbl_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_status.Name = "lbl_status";
-            this.lbl_status.Size = new System.Drawing.Size(0, 15);
+            this.lbl_status.Size = new System.Drawing.Size(0, 18);
             this.lbl_status.TabIndex = 2;
             // 
             // Timer_tick
@@ -277,13 +303,14 @@
             // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 540);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form7";
             this.Text = "Form7";
             this.groupBox1.ResumeLayout(false);
