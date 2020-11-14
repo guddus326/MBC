@@ -129,6 +129,7 @@ namespace MBC
             label1.Text = i.result;
         }
 
+<<<<<<< HEAD
         private void button4_Click(object sender, EventArgs e)
         {
             Timer1 = new Timer();
@@ -159,5 +160,13 @@ namespace MBC
         }
 
        
+=======
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;             // 추가
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
+        }
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
     }
 }

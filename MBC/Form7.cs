@@ -11,12 +11,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace MBC
 {
     public partial class Form7 : Form
     {
-
+        WindowsMediaPlayer Player = new WindowsMediaPlayer();
         Boolean setting = false;
         String file_path = null;
         int hour;
@@ -24,6 +25,8 @@ namespace MBC
         int sec;
         int time = 0;
         int schedule = 0;
+        String settingTime = "";
+        String s;
 
         int status = 0;
         protected override void WndProc(ref Message m)
@@ -48,6 +51,7 @@ namespace MBC
         public Form7()
         {
             InitializeComponent();
+            Player.URL = "bell.wav"; 
         }
         
         private void Timer_tick_Tick(object sender, EventArgs e)
@@ -56,54 +60,65 @@ namespace MBC
             if(setting == true)
             {
                 time -= 1;
-                lbl_status.Text = "알람까지 " + time + "초 남았습니다.";
                 if(time <= 0)
                 {
                     setting = false;
-                    radioButton1.Enabled = true;
-                    radioButton2.Enabled = true;
                     button1.Visible = true;
                     time = 0;
                     MessageBox.Show("알람이 울립니다.");
                 }
             }
-            String s = DateTime.Now.ToString("HHmmss");
+            s = DateTime.Now.ToString("HHmmss");
+            
             int day = WhatDay;
             if (status==1) { 
                 switch (s)
                 {
                     case "094920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("1교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "103920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("2교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "112920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("3교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "121920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("4교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "140920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("5교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "145920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("6교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
                     case "154920":
                         Thread.Sleep(10000);
+                        Player.controls.play();
+                        MessageBox.Show("7교시가 끝났습니다. USB 분리");
+                        schedule = 1;
+                        break;
+                    case "185350":
+                        Thread.Sleep(10000);
+                        Player.controls.play();
                         MessageBox.Show("7교시가 끝났습니다. USB 분리");
                         schedule = 1;
                         break;
@@ -111,114 +126,38 @@ namespace MBC
             }
         }
 
-        private void Btn_music_load_Click(object sender, EventArgs e)
-        {
-            String file_path = null;
-            ofd_music.InitialDirectory = "C:\\"; //기본 경로 설정
-            if(ofd_music.ShowDialog() == DialogResult.OK)   //다이얼로그에서 OK를 눌렀을 때
-            {
-                file_path = ofd_music.FileName;
-                text_soundname.Text = file_path.Split('\\')[file_path.Split('\\').Length - 1];
-                //경로를 지우고 파일 이름과 확장자명만 보여줄 때
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SoundPlayer sp = new SoundPlayer(file_path);
-                sp.Play();
-            }
-            catch (Exception ex)
-            {
-                ReportStatus(ex.Message);
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SoundPlayer sp = new SoundPlayer(file_path);
-                sp.Stop();
-            }
-            catch(Exception ex)
-            {
-                ReportStatus(ex.Message);
-            }
-        }
-
         private void ReportStatus(string message) => throw new NotImplementedException();
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(radioButton1.Checked == true)
-            {
-                numericUpDown3.Visible = false;
-                label3.Visible = false;
-            }
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if(radioButton2.Checked == true)
-            {
-                numericUpDown3.Visible = true;
-                label3.Visible = true;
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Debug.WriteLine(s);
+            
+            hour = (int)numericUpDown1.Value;
 
-            if (radioButton1.Checked == true)    //알람 버튼이 선택
-            {
-                hour = (int)numericUpDown1.Value;
-                min = (int)numericUpDown2.Value;
-                for(; hour >= 1; hour--)
-                {
-                    time += 3600;
-                }
-                for(; min >= 1; min--)
-                {
-                    time += 60;
-                }
-                radioButton1.Enabled = false;
-                radioButton2.Enabled = false;
-                button1.Visible = false;
-                setting = true;
-            }
+            Debug.WriteLine(hour);
+            min = (int)numericUpDown2.Value;
+            Debug.WriteLine(min);
+            sec = (int)numericUpDown3.Value; 
+            Debug.WriteLine(sec);
+           // settingTime = Convert.ToString(hour) + Convert.ToString(min) + Convert.ToString(sec);
+            Debug.WriteLine(settingTime);
 
-            if(radioButton2.Checked == true)    //타이머 버튼 선택
-            {
-                hour = (int)numericUpDown1.Value;
-                min = (int)numericUpDown2.Value;
-                sec = (int)numericUpDown3.Value;
-                for(; hour >= 1; hour--)
-                {
-                    time += 3600;
-                }
-                for(; min >= 1; min--)
-                {
-                    time += 60;
-                }
-                for(; sec >= 1; sec--)
-                {
-                    time += 1;
-                }
-                radioButton1.Enabled = false;
-                radioButton2.Enabled = false;
-                button1.Visible = false;
-                setting = true;
-            }
+            for (; hour >= 1; hour--)
+           {
+                time += 3600;
+           }
+          for(; min >= 1; min--)
+          {
+                time += 60;
+          }
+          for(; sec >= 1; sec--)
+          {
+                time += 1;
+          }
+            button1.Visible = false;
+            setting = true;
         }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            textBox1.Text = "status";
-        }
-
         private int WhatDay
         {
             get
@@ -235,6 +174,20 @@ namespace MBC
             }
         }
 
+<<<<<<< HEAD
     
+=======
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            Player.controls.stop();
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
+        }
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
     }
 }

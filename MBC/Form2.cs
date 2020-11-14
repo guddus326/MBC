@@ -15,7 +15,9 @@ namespace MBC
         public Form2()
         {
             InitializeComponent();
-            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\로고.png");
+            //pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\로고.png");
+            pictureBox1.Load(@"C:\\MBC\\로고.png");
+
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 

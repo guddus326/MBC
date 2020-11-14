@@ -29,47 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.초 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Btn_music_load = new System.Windows.Forms.Button();
-            this.text_soundname = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbl_realtime = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lbl_status = new System.Windows.Forms.Label();
             this.Timer_tick = new System.Windows.Forms.Timer(this.components);
             this.ofd_music = new System.Windows.Forms.OpenFileDialog();
+            this.back_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.axWindowsMediaPlayer1);
             this.groupBox1.Controls.Add(this.초);
             this.groupBox1.Controls.Add(this.numericUpDown3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Location = new System.Drawing.Point(29, 25);
@@ -81,6 +71,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "시간 설정";
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(110, 81);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(214, 64);
+            this.axWindowsMediaPlayer1.TabIndex = 1;
+            this.axWindowsMediaPlayer1.Visible = false;
+            // 
             // 초
             // 
             this.초.AutoSize = true;
@@ -89,7 +89,7 @@
             this.초.Name = "초";
             this.초.Size = new System.Drawing.Size(26, 18);
             this.초.TabIndex = 8;
-            this.초.Text = "시";
+            this.초.Text = "초";
             // 
             // numericUpDown3
             // 
@@ -101,13 +101,18 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(402, 161);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.button1.Location = new System.Drawing.Point(369, 122);
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 28);
             this.button1.TabIndex = 6;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -129,6 +134,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "시";
             // 
+<<<<<<< HEAD
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -155,6 +161,8 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+=======
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(169, 42);
@@ -172,6 +180,7 @@
             this.numericUpDown1.TabIndex = 0;
            
             // 
+<<<<<<< HEAD
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button4);
@@ -249,6 +258,8 @@
             this.text_soundname.Size = new System.Drawing.Size(533, 28);
             this.text_soundname.TabIndex = 0;
             // 
+=======
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbl_realtime);
@@ -271,6 +282,7 @@
             this.lbl_realtime.TabIndex = 0;
             this.lbl_realtime.Text = "시간";
             // 
+<<<<<<< HEAD
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lbl_status);
@@ -292,6 +304,8 @@
             this.lbl_status.Size = new System.Drawing.Size(0, 18);
             this.lbl_status.TabIndex = 2;
             // 
+=======
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
             // Timer_tick
             // 
             this.Timer_tick.Enabled = true;
@@ -301,29 +315,41 @@
             // 
             this.ofd_music.Filter = "(*.wav)|*wav|모든 파일 (*.*)|*.*";
             // 
+            // back_btn
+            // 
+            this.back_btn.Location = new System.Drawing.Point(560, 351);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(199, 81);
+            this.back_btn.TabIndex = 3;
+            this.back_btn.Text = "뒤로가기";
+            this.back_btn.UseVisualStyleBackColor = true;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1000, 540);
             this.Controls.Add(this.groupBox4);
+=======
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_btn);
+>>>>>>> c37f2bbe0204b6f0f0c741492b164f0704798066
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form7";
             this.Text = "Form7";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -331,28 +357,19 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Btn_music_load;
-        private System.Windows.Forms.TextBox text_soundname;
         private System.Windows.Forms.Label lbl_realtime;
         private System.Windows.Forms.Timer Timer_tick;
         private System.Windows.Forms.OpenFileDialog ofd_music;
-        private System.Windows.Forms.Label lbl_status;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label 초;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Button back_btn;
     }
 }
 

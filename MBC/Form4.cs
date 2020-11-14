@@ -18,7 +18,8 @@ namespace MBC
         public Form4()
         {
             InitializeComponent();
-            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
+            //pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
+            pictureBox1.Load(@"C:\\MBC\\USB.png");
         }
         string status = "";
         protected override void WndProc(ref Message m)
@@ -45,6 +46,13 @@ namespace MBC
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             textBox1.Text = status;
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
         }
     }
 }
