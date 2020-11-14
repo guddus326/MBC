@@ -117,5 +117,12 @@ namespace MBC
             i.DisconnectInternet();
             label1.Text = i.result;
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;             // 추가
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
+        }
     }
 }

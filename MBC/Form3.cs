@@ -15,9 +15,12 @@ namespace MBC
         public Form3()
         {
             InitializeComponent();
-            pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
-            pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\internet.png");
-            pictureBox3.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\time.png");
+            //pictureBox1.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\USB.png");
+            pictureBox1.Load(@"C:\\MBC\\USB.png");
+            //pictureBox2.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\internet.png");
+            pictureBox2.Load(@"C:\\MBC\\internet.png");
+            //pictureBox3.Load(@"C:\\Users\\s2019\\Desktop\\workspace\\MBC\\time.png");
+            pictureBox3.Load(@"C:\\MBC\\time.png");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -37,10 +40,15 @@ namespace MBC
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form7 showForm5 = new Form7();
-            showForm5.ShowDialog();
+            Form7 showForm7 = new Form7();
+            showForm7.ShowDialog();
         }
 
-  
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form2 showForm2 = new Form2();
+            showForm2.ShowDialog();
+        }
     }
 }

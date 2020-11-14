@@ -178,5 +178,12 @@ namespace MBC
         {
             Player.controls.stop();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form3 showForm3 = new Form3();
+            showForm3.ShowDialog();
+        }
     }
 }
