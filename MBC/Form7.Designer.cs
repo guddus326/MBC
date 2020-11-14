@@ -40,6 +40,7 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.lbl_status = new System.Windows.Forms.Label();
             this.Timer_tick = new System.Windows.Forms.Timer(this.components);
             this.ofd_music = new System.Windows.Forms.OpenFileDialog();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -175,6 +175,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "음악 설정";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(311, 81);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(68, 37);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(147, 77);
@@ -264,16 +274,6 @@
             // ofd_music
             // 
             this.ofd_music.Filter = "(*.wav)|*wav|모든 파일 (*.*)|*.*";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(311, 81);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 37);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // Form7
             // 
